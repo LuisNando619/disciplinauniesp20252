@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forró Brasil — Clássicos e ícones</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --preto: #0d0d0d;
+      --vermelho: #e50914;
+      --cinza: #222;
+      --branco: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Oswald', sans-serif;
+      background: var(--preto);
+      color: var(--branco);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--vermelho);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .brand {
+      font-family: 'Anton', sans-serif;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      color: var(--branco);
+      text-shadow: 3px 3px var(--cinza);
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+    .menu a {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: var(--branco);
+      text-transform: uppercase;
+      margin: 0 12px;
+      transition: 0.3s;
+    }
+    .menu a:hover {
+      color: var(--preto);
+      background: var(--branco);
+      padding: 6px 10px;
+      border-radius: 6px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(180deg, var(--cinza), var(--preto));
+    }
+    .hero h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 2.8rem;
+      color: var(--vermelho);
+      text-shadow: 4px 4px var(--cinza);
+      letter-spacing: 3px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #ddd;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .icons {
+      margin-top: 20px;
+      font-size: 1.8rem;
+    }
+    .icons i {
+      margin: 0 12px;
+      color: var(--vermelho);
+      transition: transform 0.3s;
+    }
+    .icons i:hover {
+      transform: scale(1.2) rotate(-10deg);
+      color: var(--branco);
+    }
+
+    section {
+      padding: 30px 20px;
+    }
+
+    h2 {
+      font-family: 'Anton', sans-serif;
+      color: var(--vermelho);
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px var(--cinza);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 20px;
+    }
+    @media (max-width:700px){ .grid{grid-template-columns:1fr} }
+
+    .card {
+      background: var(--cinza);
+      border: 2px solid var(--vermelho);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: 160px; /* menor altura */
+      object-fit: cover;
+    }
+    .card .content {
+      padding: 12px;
+    }
+    .card h3 {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.3rem;
+      color: var(--vermelho);
+      text-transform: uppercase;
+      margin: 6px 0;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #ddd;
+      margin-top: 6px;
+    }
+    .badge {
+      font-family: 'Oswald', sans-serif;
+      background: var(--vermelho);
+      color: var(--branco);
+      font-weight: bold;
+      padding: 3px 6px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+
+    footer {
+      background: var(--vermelho);
+      color: var(--branco);
+      text-align: center;
+      padding: 15px;
+      font-weight: bold;
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Forró Brasil</div>
+    <nav class="menu">
+      <a href="#home">Início</a>
+      <a href="#destaques">Bandas</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>Clássicos e ícones do forró brasileiro</h1>
+      <p>Uma celebração das bandas que moldaram o som do Brasil.</p>
+      <div class="icons">
+        <i class="fa-solid fa-skull"></i>
+        <i class="fa-solid fa-guitar"></i>
+        <i class="fa-solid fa-drum"></i>
+        <i class="fa-solid fa-music"></i>
+      </div>
+    </section>
+
+    <section id="destaques">
+      <h2>Bandas destacadas</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="artistas_forro/desejo-de-menina.jpg">
+          <div class="content">
+            <span class="badge">O Clássico do Forró Romântico</span>
+            <h3>desejo de menina</h3>
+            <p>Desejo de Menina é uma das bandas mais marcantes do forró romântico. Surgida nos anos 2000, conquistou o público com letras apaixonadas, melodias envolventes e interpretações cheias de emoção. Sua trajetória é marcada por músicas que falam de amor, saudade e reencontros, muitas delas se tornando verdadeiros hinos para várias gerações. Com estilo único e identidade forte, o grupo segue sendo um dos grandes nomes do forró sentimental no Brasil.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="artistas_forro/Avioes-do-Forro.jpg">
+          <div class="content">
+            <span class="badge">Os Poetas do Forró Romântico</span>
+            <h3>aviões do Forró</h3>
+            <p>Aviões do Forró é uma das bandas mais influentes do forró eletrônico. Formado nos anos 2000, o grupo conquistou o Brasil com sua mistura de energia, batidas marcantes e performances cheias de presença. Com sucessos que embalam festas, vaquejadas e grandes palcos, o Aviões se destacou pela modernização do ritmo, unindo tradição nordestina com uma identidade vibrante e inovadora. Sua trajetória consolidou o grupo como um dos maiores nomes do gênero, marcando gerações com hits irresistíveis.
+</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="artistas_forro/limao-com-mel.webp">
+          <div class="content">
+            <span class="badge">O Som que Mudou o Forró Eletrônico</span>
+            <h3>limão com mel</h3>
+            <p>Limão com Mel é uma das bandas mais importantes do forró romântico. Surgida nos anos 1990, conquistou o público com suas letras cheias de emoção, arranjos marcantes e vozes que se tornaram referência no gênero. Suas músicas falam de amor, despedidas e reencontros, criando uma atmosfera intensa que atravessa gerações. Com uma trajetória sólida e sucessos eternizados, a banda se firmou como um dos grandes símbolos do forró apaixonado no Brasil.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="artistas_forro/calcinha-preta.jpg">
+          <div class="content">
+            <span class="badge">A Lenda do Forró Romântico</span>
+            <h3>calcinha preta</h3>
+            <p>Calcinha Preta é uma das bandas mais icônicas do forró romântico. Criada nos anos 1990, conquistou o Brasil com seu estilo marcante, letras intensas e interpretações poderosas. Suas músicas, cheias de paixão e dramaticidade, se tornaram clássicos que embalam festas, shows e gerações inteiras. Com uma identidade forte e presença inesquecível, a banda se firmou como um dos maiores nomes do forró, sendo referência absoluta no gênero.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="artistas_forro/mastruz-com-leite.jpg">
+          <div class="content">
+            <span class="badge">Os Pioneiros do Forró Moderno</span>
+            <h3>mastruz com leite</h3>
+            <p>Mastruz com Leite é uma das bandas mais tradicionais e influentes do forró. Surgida no início dos anos 1990, foi responsável por renovar o gênero, trazendo arranjos modernos, letras marcantes e um estilo que conquistou todo o Nordeste e se espalhou pelo Brasil. Com inúmeros sucessos e uma identidade forte, a banda se tornou referência, ajudando a moldar o forró que conhecemos hoje. Sua trajetória sólida e seu impacto cultural fazem do Mastruz com Leite um dos nomes mais importantes do cenário forrozeiro.
+            </p>
+          </div>
+        </div>
+       <div class="card">
+          <img src="artistas_forro/eliana-do-forro.jpg">
+          <div class="content">
+            <span class="badge">A Rainha do Forró</span>
+            <h3>eliane do forró</h3>
+            <p>Eliane do Forró é uma das vozes mais marcantes e respeitadas do gênero. Iniciando sua carreira nos anos 1980, conquistou o público com sua potência vocal, interpretação apaixonada e presença carismática. Suas músicas embalam histórias de amor, saudade e alegria, tornando-se trilhas sonoras de gerações. Com uma trajetória sólida e enorme contribuição para a cultura nordestina, Eliane se consagrou como a verdadeira Rainha do Forró.
+            </p>
+          </div>
+        </div>
+
+           </section>
+
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <p style="text-align:center">Este site recorda o forró clássico brasileiro.</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Forró - Brasil🔥
+  </footer>
+</body>
+</html>
